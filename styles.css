@@ -1,0 +1,160 @@
+/* Reset some default styles */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5dc; /* Beige background */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #2E7D32; /* Darker green background */
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff; /* White background for sections */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2E7D32; /* Darker green color for headings */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2E7D32; /* Darker green background */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+    backdrop-filter: blur(5px); /* Blur the background */
+}
+
+.modal-content {
+    background-color: #2E7D32; /* Match the header/footer color */
+    margin: 10% auto; /* Center the modal */
+    padding: 30px;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 400px; /* Fixed width for the modal */
+    animation: slideIn 0.3s ease; /* Animation for opening */
+    color: #ffffff; /* Change text color to white for contrast */
+    text-align: center; /* Centered text */
+}
+
+.close {
+    color: #ffffff; /* Change close button color to white */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #a5d6a7; /* Light green shade for hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for form elements */
+.form-header {
+    background-color: #FFA500; /* Yellowish-orange background */
+    padding: 5px; /* Add some padding */
+    border-radius: 25px; /* Round corners */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 15px; /* Space below the header */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+    color: #ffffff; /* Change label color to white */
+}
+
+/* Updated input styles */
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #a5d6a7; /* Light green border */
+    border-radius: 20px; /* More rounded corners for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    text-align: center; /* Centered text for inputs */
+    background-color: #a5d6a7; /* Light green background for inputs */
+    color: #2E7D32; /* Dark green text color */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ffffff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Updated submit button styling to yellowish-orange */
+button[type="submit"] {
+    background-color: #FFA500; /* Yellowish-orange button color */
+    color: #333; /* Dark text color for contrast */
+    padding: 12px;
+    border: none;
+    border-radius: 20px; /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for button */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF8C00; /* Darker shade of orange on hover */
+}
