@@ -137,7 +137,7 @@
         </nav>
         <div class="auth-buttons">
             <button class="login-button" onclick="openModal()">Login</button>
-            <button class="signin-button">Sign In</button>
+            <button class="signin-button" onclick="openSignInForm()">Sign In</button> <!-- Updated this line -->
         </div>
     </header>
     <main>
@@ -146,13 +146,13 @@
 
             <div class="slideshow-container">
                 <div class="slides fade">
-                    <img src="images/img1.jpg" alt="Image 1" style="width:100%">
+                    <img src="images/img4.jpg" alt="Image 1" style="width:100%">
                 </div>
                 <div class="slides fade">
-                    <img src="images/img2.jpg" alt="Image 2" style="width:100%">
+                    <img src="images/img5.jpg" alt="Image 2" style="width:100%">
                 </div>
                 <div class="slides fade">
-                    <img src="images/img3.jpg" alt="Image 3" style="width:100%">
+                    <img src="images/img6.jpg" alt="Image 3" style="width:100%">
                 </div>
     
                 <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -212,8 +212,26 @@
         }
 
         // Function to open the login modal
+        // Function to open the login modal
         function openModal() {
             document.getElementById("loginModal").style.display = "block";
+            document.getElementById("loginForm").style.display = "block"; // Show login form
+            document.getElementById("signInForm").style.display = "none"; // Hide sign-in form
+        }
+
+        // Function to open the sign-in form
+        function openSignInForm() {
+            document.getElementById("loginModal").style.display = "block";
+            document.getElementById("loginForm").style.display = "none"; // Hide login form
+            document.getElementById("signInForm").style.display = "block"; // Show sign-in form
+        }
+
+        // Close the modal when the user clicks anywhere outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById("loginModal");
+            if (event.target == modal) {
+                closeModal();
+            }
         }
 
         // Function to close the login modal
@@ -221,21 +239,11 @@
             document.getElementById("loginModal").style.display = "none";
         }
 
-        // Add event listener to the login button
-        document.querySelector('.login-button').addEventListener('click', openModal);
-
-        // Close the modal when the user clicks anywhere outside of it
-        window.onclick = function(event) {
-        const modal = document.getElementById("loginModal");
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-
+        // Function to toggle forms (optional, if you want to keep the toggle functionality)
         function toggleForms() {
             const loginForm = document.getElementById("loginForm");
             const signInForm = document.getElementById("signInForm");
-            
+    
             if (loginForm.style.display === "none") {
                 loginForm.style.display = "block";
                 signInForm.style.display = "none";

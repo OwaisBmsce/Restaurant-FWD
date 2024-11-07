@@ -5,9 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Header styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: #2E7D32; /* Background color for header */
+            color: white;
+        }
+
+        .logo-container {
+            margin-right: 20px; /* Space between logo and nav */
+        }
+
+        .logo {
+            max-height: 50px; /* Adjust logo size */
+        }
+
+        nav {
+            flex-grow: 1; /* Allow nav to take remaining space */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end; /* Align items to the right */
+        }
+
+        nav li {
+            margin: 0 15px; /* Space between navigation items */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Restaurant Logo" class="logo"> <!-- Add your logo image here -->
+        </div>
         <nav>
             <ul>
                 <li><a href="HomePage.html">Home</a></li>
@@ -22,26 +70,26 @@
             <h1>Our Menu</h1>
             <h2>Appetizers</h2>
             <ul>
-                <li>Bruschetta - $8</li>
-                <li>Stuffed Mushrooms - $10</li>
-                <li>Garlic Bread - $6</li>
+                <li>Bruschetta - Rs.250</li>
+                <li>Stuffed Mushrooms - Rs.250</li>
+                <li>Garlic Bread - Rs.250</li>
             </ul>
             <h2>Main Courses</h2>
             <ul>
-                <li>Grilled Salmon - $20</li>
-                <li>Chicken Alfredo - $18</li>
-                <li>Vegetable Stir Fry - $15</li>
+                <li>Grilled Salmon - Rs.250</li>
+                <li>Chicken Alfredo - Rs.250</li>
+                <li>Vegetable Stir Fry - Rs.250</li>
             </ul>
             <h2>Desserts</h2>
             <ul>
-                <li>Tiramisu - $7</li>
-                <li>Chocolate Lava Cake - $8</li>
-                <li>Cheesecake - $6</li>
+                <li>Tiramisu - Rs.250</li>
+                <li>Chocolate Lava Cake - Rs.250</li>
+                <li>Cheesecake - Rs.250</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Restaurant Webpage</p>
+        <p>&copy; 2024 Restaurant Webpage</p>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -5,9 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Header styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: #2E7D32; /* Background color for header */
+            color: white;
+        }
+
+        .logo-container {
+            margin-right: 20px; /* Space between logo and nav */
+        }
+
+        .logo {
+            max-height: 50px; /* Adjust logo size */
+        }
+
+        nav {
+            flex-grow: 1; /* Allow nav to take remaining space */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end; /* Align items to the right */
+        }
+
+        nav li {
+            margin: 0 15px; /* Space between navigation items */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Restaurant Logo" class="logo"> <!-- Add your logo image here -->
+        </div>
         <nav>
             <ul>
                 <li><a href="HomePage.html">Home</a></li>
@@ -22,7 +70,7 @@
             <h1>About Us</h1>
             <p>Welcome to our restaurant! We are dedicated to providing the best dining experience with fresh ingredients and a welcoming atmosphere.</p>
             <h2>Our Story</h2>
-            <p>Founded in 2020, our restaurant has quickly become a favorite in the community. Our chefs are passionate about creating delicious dishes that highlight the best of local produce.</p>
+            <p>Founded in 2024, our restaurant has quickly become a favorite in the community. Our chefs are passionate about creating delicious dishes that highlight the best of local produce.</p>
             <h2>Our Mission</h2>
             <p>Our mission is to serve high-quality food in a friendly environment, ensuring that every guest leaves satisfied.</p>
             <h2>Our Values</h2>
@@ -34,7 +82,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Restaurant Webpage</p>
+        <p>&copy; 2024 Restaurant Webpage</p>
     </footer>
     <script src="script.js"></script>
 </body>

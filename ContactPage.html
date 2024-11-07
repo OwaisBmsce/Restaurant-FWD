@@ -5,15 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Header styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: #2E7D32; /* Background color for header */
+            color: white;
+        }
+
+        .logo-container {
+            margin-right: 20px; /* Space between logo and nav */
+        }
+
+        .logo {
+            max-height: 50px; /* Adjust logo size */
+        }
+
+        nav {
+            flex-grow: 1; /* Allow nav to take remaining space */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end; /* Align items to the right */
+        }
+
+        nav li {
+            margin: 0 15px; /* Space between navigation items */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Restaurant Logo" class="logo"> <!-- Add your logo image here -->
+        </div>
         <nav>
             <ul>
                 <li><a href="HomePage.html">Home</a></li>
                 <li><a href="MenuPage.html">Menu</a></li>
                 <li><a href="AboutUsPage.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +75,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Restaurant Webpage</p>
+        <p>&copy; 2024 Restaurant Webpage</p>
     </footer>
     <script src="contact.js"></script>
 </body>
