@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Webpage</title>
+    <title>FOODIE'S NEST</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .slideshow-container {
@@ -11,11 +11,13 @@
             max-width: 600px;
             margin: auto;
             overflow: hidden;
+        
         }
 
         .slides {
-            display: none;
             width: 100%;
+      
+           display: none;
         }
 
         .fade {
@@ -105,9 +107,11 @@
         }
 
         .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
+            right: 10px; /* Adjust right position */
         }
+        .prev {
+         left: 10px; /* Adjust left position */
+        }  
 
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
@@ -119,7 +123,42 @@
             border-radius: 15px; /* Round corners for a more pronounced effect */
             color: #333; /* Dark text color for contrast */
             margin-bottom: 15px; /* Space below the header */
-        }        
+        }  
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Section styles */
+        section {
+            padding: 50px;
+            height: 100vh; /* Full height for each section */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Arrow button styles */
+        .arrow-button {
+            margin-top: 20px;
+            font-size: 48px; /* Increase font size for better visibility */
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from links */
+            color: #007BFF; /* Change color to match your theme */
+        }
+
+        .arrow-button:before {
+            content: '▼'; /* Use a down arrow character */
+            font-size: 48px; /* Match the size of the button */
+        }
+
+        /* Optional: Add hover effect */
+        .arrow-button:hover {
+            color: #0056b3; /* Darker shade on hover */
+        }      
     </style>
 </head>
 <body>
@@ -131,8 +170,10 @@
             <ul>
                 <li><a href="HomePage.html">Home</a></li>
                 <li><a href="MenuPage.html">Menu</a></li>
-                <li><a href="#AboutUsPage.html">About Us</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
                 <li><a href="ContactPage.html">Contact</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="orders.html">Orders</a></li>
             </ul>
         </nav>
         <div class="auth-buttons">
@@ -141,43 +182,55 @@
         </div>
     </header>
     <main>
-        <section id="home">
-            <h1>Welcome to Our Restaurant</h1>
-
-            <div class="slideshow-container">
-                <div class="slides fade">
-                    <img src="images/img4.jpg" alt="Image 1" style="width:100%">
+        <main>
+            <section id="home">
+                <h1> FOODIE'S NEST: Food full of mood</h1>
+                <h2>  </h2>
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                        <img src="images/img4.jpg" alt="Image 1" style="width:100%">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/img5.jpg" alt="Image 2" style="width:100%">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/img6.jpg" alt="Image 3" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
-                <div class="slides fade">
-                    <img src="images/img5.jpg" alt="Image 2" style="width:100%">
-                </div>
-                <div class="slides fade">
-                    <img src="images/img6.jpg" alt="Image 3" style="width:100%">
-                </div>
-    
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
-            </div>
-
-            <p>We offer a wide variety of delicious dishes for you to enjoy.</p>
-        </section>
+                <p>Life's too short to settle for ordinary meals.</p>
+                <a href="#menu" class="arrow-button"></a>
+            </section>
+            
+            
         <section id="menu">
             <h1>Our Menu</h1>
-            <ul>
-                <li>Appetizers</li>
-                <li>Main Course</li>
-                <li>Desserts</li>
-            </ul>
+            <p> Welcome to Foodie's Nest, where every dish is a celebration of fresh, locally sourced ingredients and bold, innovative flavors. Our menu is thoughtfully crafted to offer a variety of options that cater to all tastes and dietary preferences, with a focus on quality and seasonal ingredients.
+
+                Start your meal with our signature appetizers, ranging from crisp, refreshing salads to indulgent, hand-crafted dips. For the main course, you'll find a range of dishes that blend traditional favorites with contemporary twists—whether you're craving a perfectly grilled chicken tikka, a delicate seafood dish, or a vibrant vegetarian creation, there's something to satisfy every palate.
+                
+                We take pride in our desserts, offering a sweet end to your dining experience with decadent treats that showcase both creativity and craftsmanship. And don't forget to pair your meal with a selection from our carefully curated wine list, featuring local and international wines chosen to complement every bite.
+                
+                At Foodie's Nest, we believe dining should be an experience—a place where flavor, ambiance, and great company come together for an unforgettable meal.
+                
+                
+                
+                 </p>
+                 <a href="#about" class="arrow-button"></a>
         </section>
         <section id="about">
             <h1>About Us</h1>
-            <p>We are dedicated to providing the best dining experience with fresh ingredients and a welcoming atmosphere.</p>
+            <p>Welcome to Foodie's Nest, where passion for food meets artistry in every bite. Nestled in the heart of Basavanagudi, our restaurant is more than just a dining destination—it's a celebration of the finest ingredients, bold flavors, and a dining experience that will leave a lasting impression. </p>
+            <a href="#contact" class="arrow-button"></a>
+               
         </section>
         <section id="contact">
             <h1>Get in Touch</h1>
             <p>Phone: 12345</p>
             <p>Email: <a href="mailto:restaurant@email.com">restaurant@gmail.com</a></p>
             <p>Address: Test, Bangalore</p>
+            <a href="#home" class="arrow-button"></a>
         </section>
     </main>
     <footer>
