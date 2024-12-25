@@ -41,7 +41,6 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px 20px;
-            background-color: #2E7D32; /* Background color for header */
             color: white;
         }
 
@@ -185,8 +184,8 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <button class="login-button" onclick="openModal()">Login</button>
-            <button class="signin-button" onclick="openSignInForm()">Sign In</button> <!-- Updated this line -->
+            <button class="login-button" onclick="redirectToLogin()">Login</button>
+          <!--  <button class="signin-button" onclick="openSignInForm()">Sign In</button> --><!-- Updated this line -->
         </div>
     </header>
     <main>
@@ -259,6 +258,10 @@
             if (slideIndex > slides.length) {slideIndex = 1}    
             slides[slideIndex - 1].style.display = "block";  
             setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+
+        function redirectToLogin() {
+            window.location.href = 'http://localhost/Login/index.php'; // Redirect to the desired page
         }
 
         function changeSlide(n) {
