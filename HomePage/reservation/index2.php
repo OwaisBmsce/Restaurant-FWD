@@ -4,75 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Header styles */
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 20px;
-            background-color: #2E7D32; /* Background color for header */
-            color: white;
-        }
-        
-
-        .logo-container {
-            margin-right: 20px; /* Space between logo and nav */
-        }
-
-        .logo {
-            max-height: 50px; /* Adjust logo size */
-        }
-
-        nav {
-            flex-grow: 1; /* Allow nav to take remaining space */
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-            justify-content: flex-end; /* Align items to the right */
-        }
-
-        nav li {
-            margin: 0 15px; /* Space between navigation items */
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
     <header>
         <div class="logo-container">
             <img src="Logo.png" alt="Restaurant Logo" class="logo"> <!-- Add your logo image here -->
         </div>
+        
         <nav>
             <ul>
                 <li><a href="HomePage.html">Home</a></li>
                 <li><a href="MenuPage.html">Menu</a></li>
                 <li><a href="AboutUsPage.html">About Us</a></li>
                 <li><a href="ContactPage.html">Contact</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="http://localhost/reservation/index2.php">Reservation</a></li>
                 <li><a href="orders.html">Orders</a></li>
             </ul>
         </nav>
+        
     </header>
     <main>
         <section id="reservation">
             <h1>Make a Reservation</h1>
             <p>We would love to host you! Please fill out the form below to make a reservation.</p>
-            <form id="reservationForm">
+            <form id="reservationForm" action="register.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required placeholder="Your Name">
         
@@ -85,13 +42,18 @@
                 <label for="guests">Number of Guests:</label>
                 <input type="number" id="guests" name="guests" required placeholder="Number of Guests" min="1">
         
-                <button type="submit" class="reserve-btn">Reserve Now</button>
+                <button type="submit" class="reserveButton">Reserve Now</button>
             </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Restaurant Webpage</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+        function redirectToReservation() {
+            window.location.href = 'http://localhost/reservation/index2.php'; // Redirect to the desired page
+        }
+    </script> <!-- Link to external JavaScript -->
 </body>
 </html>
+  

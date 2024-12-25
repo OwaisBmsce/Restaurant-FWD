@@ -179,7 +179,7 @@
                 <li><a href="MenuPage.html">Menu</a></li>
                 <li><a href="AboutUsPage.html">About Us</a></li>
                 <li><a href="ContactPage.html">Contact</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="http://localhost/reservation/index2.php">Reservation</a></li>
                 <li><a href="orders.html">Orders</a></li>
             </ul>
         </nav>
@@ -187,6 +187,7 @@
             <button class="login-button" onclick="redirectToLogin()">Login</button>
           <!--  <button class="signin-button" onclick="openSignInForm()">Sign In</button> --><!-- Updated this line -->
         </div>
+        
     </header>
     <main>
         <main>
@@ -263,6 +264,11 @@
         function redirectToLogin() {
             window.location.href = 'http://localhost/Login/index.php'; // Redirect to the desired page
         }
+
+        function redirectToReservation() {
+            window.location.href = 'http://localhost/reservations/index2.php'; // Redirect to the desired page
+        }
+        
 
         function changeSlide(n) {
             slideIndex += n;
