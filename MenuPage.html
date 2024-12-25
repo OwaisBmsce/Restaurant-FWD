@@ -49,6 +49,69 @@
         nav a:hover {
             text-decoration: underline; /* Underline on hover */
         }
+
+        /* Main section styles */
+        main {
+            padding: 20px;
+            background-color: #f9f9f9; /* Light background for contrast */
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .menu-column {
+            flex: 1; /* Each column takes equal space */
+            margin: 10px; /* Space between columns */
+            padding: 20px;
+            background-color: #e8f5e9; /* Light green background */
+            border: 1px solid #2E7D32; /* Border to separate columns */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            min-width: 280px; /* Minimum width for columns */
+            max-width: 30%; /* Maximum width for columns */
+        }
+
+        h1 {
+            text-align: center; /* Center the main heading */
+            color: #2E7D32; /* Dark green for main heading */
+        }
+
+        h2 {
+            text-align: center;
+            color: #2E7D32; /* Dark green for headings */
+            border-bottom: 2px solid #2E7D32; /* Underline effect */
+            padding-bottom: 5px; /* Space below heading */
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+        }
+
+        li {
+            text-align: center;
+            margin: 10px 0; /* Space between menu items */
+            font-size: 25px; /* Font size for menu items */
+            color: #333; /* Dark text color */
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2E7D32; /* Footer background */
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .menu-column {
+                max-width: 100%; /* Full width on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -70,24 +133,30 @@
     <main>
         <section id="menu">
             <h1>Our Menu</h1>
-            <h2>Appetizers</h2>
-            <ul>
-                <li>Bruschetta - Rs.250</li>
-                <li>Stuffed Mushrooms - Rs.250</li>
-                <li>Garlic Bread - Rs.250</li>
+            <div class="menu-column">
+                <h2>Appetizers</h2>
+                <ul>
+                    <li>Bruschetta - Rs.250</li>
+                    <li>Stuffed Mushrooms - Rs.250</li>
+                    <li>Garlic Bread - Rs.250</li>
+                </ul>
+            </div>
+            <div class="menu-column">
+                <h2>Main Courses</h2>
+                <ul>
+                    <li>Grilled Salmon - Rs.250</li>
+                    <li>Chicken Alfredo - Rs.250</li>
+                    <li>Vegetable Stir Fry - Rs.250</li>
             </ul>
-            <h2>Main Courses</h2>
-            <ul>
-                <li>Grilled Salmon - Rs.250</li>
-                <li>Chicken Alfredo - Rs.250</li>
-                <li>Vegetable Stir Fry - Rs.250</li>
-            </ul>
+            </div>
+            <div class="menu-column">
             <h2>Desserts</h2>
             <ul>
                 <li>Tiramisu - Rs.250</li>
                 <li>Chocolate Lava Cake - Rs.250</li>
                 <li>Cheesecake - Rs.250</li>
             </ul>
+        </div>
         </section>
     </main>
     <footer>
