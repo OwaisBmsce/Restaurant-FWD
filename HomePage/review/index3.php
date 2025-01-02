@@ -77,21 +77,6 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="Logo.png" alt="Restaurant Logo" class="logo"> <!-- Add your logo image here -->
-        </div>
-        <nav>
-            <ul>
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="MenuPage.html">Menu</a></li>
-                <li><a href="AboutUsPage.html">About Us</a></li>
-                <li><a href="ContactPage.html">Contact</a></li>
-                <li><a href="http://localhost/reservation/index2.php">Reservation</a></li>
-                <li><a href="http://localhost/review/index3.php">Review</a></li>
-            </ul>
-        </nav>
-    </header>
     <div class="container">
         <h1>Submit Your Feedback</h1>
         <p>We value your feedback. Please fill out the form below!</p>

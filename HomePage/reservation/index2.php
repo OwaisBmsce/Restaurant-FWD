@@ -8,23 +8,6 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="Logo.png" alt="Restaurant Logo" class="logo"> <!-- Add your logo image here -->
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="MenuPage.html">Menu</a></li>
-                <li><a href="AboutUsPage.html">About Us</a></li>
-                <li><a href="ContactPage.html">Contact</a></li>
-                <li><a href="http://localhost/reservation/index2.php">Reservation</a></li>
-                <li><a href="orders.html">Orders</a></li>
-            </ul>
-        </nav>
-        
-    </header>
     <main>
         <section id="reservation">
             <h1>Make a Reservation</h1>
